@@ -29,7 +29,6 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="username"
-        android:textColorHint="grey"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -44,7 +43,6 @@
         android:ems="10"
         android:inputType="textPassword"
         android:hint="password"
-        android:textColorHint="grey"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -64,5 +62,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.563" />
+
+    <TextView
+        android:id="@+id/login_addtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Belum Punya Akun ??"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_button" />
+
+    <Button
+        android:id="@+id/login_toRegister"
+        android:layout_width="174dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="4dp"
+        android:text="Klik disini"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_addtext" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

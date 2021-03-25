@@ -11,13 +11,17 @@ public class MainActivity extends AppCompatActivity {
     private EditText username;
     private EditText password;
     private Button login;
+    private Button loginToRegister;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         username = findViewById(R.id.login_username);
         password = findViewById(R.id.login_password);
         login = findViewById(R.id.login_button);
+        loginToRegister = findViewById(R.id.login_toRegister);
+
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -27,6 +31,15 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(new Intent(MainActivity.this, Homepage.class));
                }
             }
+
         });
+
+        loginToRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Register.class));
+            }
+        });
+
     }
 }
