@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -35,10 +36,16 @@ public class Register extends AppCompatActivity {
                 String registertelepon = registerTelepon.getText().toString();
                 String registerpassword = registerPassword.getText().toString();
 
-              if (registeremail != null && registernama != null && registerPassword != null && registertelepon != null){
-                startActivity(new Intent(Register.this, Homepage.class));
-            }
+              if (registeremail.equals("dewik@gmail.com") && registernama.equals("dewik") && registerpassword.equalsIgnoreCase("dewik123") && registertelepon.equals("082133287112")) {
 
+                  startActivity(new Intent(Register.this, Homepage.class));
+                  finish();
+              }
+
+              else {
+                  AlertDialog.Builder warning = new AlertDialog.Builder(Register.this);
+                  warning.setMessage("Input yang anda masukkan tidak lengkap atau tidak sesuai").setNegativeButton("Retry", null).create().show();
+              }
             }
         });
     }
