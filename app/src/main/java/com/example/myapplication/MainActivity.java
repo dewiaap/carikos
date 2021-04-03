@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private TextInputEditText password;
     private Button login;
     private TextView loginToRegister;
+    private RadioButton radioRegister;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         password = findViewById(R.id.login_password);
         login = findViewById(R.id.login_button);
         loginToRegister = findViewById(R.id.login_toRegister);
+        radioRegister = findViewById(R.id.radio_register);
 
         login.setOnClickListener(new View.OnClickListener() {
 
@@ -46,9 +48,15 @@ public class MainActivity extends AppCompatActivity {
         loginToRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, booking_step1.class));
+                startActivity(new Intent(MainActivity.this, Register.class));
             }
         });
 
+        radioRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Register.class));
+            }
+        });
     }
 }

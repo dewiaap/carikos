@@ -4,7 +4,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -27,7 +29,6 @@ public class Homepage extends AppCompatActivity {
                 switch (item.getItemId()){
                     case R.id.search :
                         fragment = new Search();
-                        getActionBar().setTitle("Cari");
                         break;
 
                     case R.id.home:
@@ -57,5 +58,26 @@ public class Homepage extends AppCompatActivity {
             return true;
         }
         return false;
+    }
+    public void setActionBarTitle(String title) {
+        getSupportActionBar().setTitle(title);
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // R.menu.mymenu is a reference to an xml file named mymenu.xml which should be inside your res/menu directory.
+        // If you don't have res/menu, just create a directory named "menu" inside res
+        getMenuInflater().inflate(R.menu.menu_chat, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    // handle button activities
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.chat) {
+            startActivity(new Intent(Homepage.this, Chat.class));
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
