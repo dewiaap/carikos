@@ -1,4 +1,4 @@
-package com.example.myapplication;
+ package com.example.myapplication;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         loginToRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Register.class));
+                startActivity(new Intent(MainActivity.this, booking_step1.class));
             }
         });
 
