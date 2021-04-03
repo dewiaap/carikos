@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#f4f9fa"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.921"
+        app:srcCompat="@drawable/ic_line_15" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.756"
+        app:srcCompat="@drawable/ic_line_15" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="198dp"
+        android:layout_height="34dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="super.namakost"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42" />
+
+    <TextView
+        android:id="@+id/step2_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_light"
+        android:text="superr.gender"
+        android:textColor="#4FA6CB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.358" />
+
+    <TextView
+        android:id="@+id/step2_sisakamar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="super.sisa kamar"
+        android:fontFamily="@font/poppins_light"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.358" />
+
+    <TextView
+        android:id="@+id/step2_alamatkost"
+        android:layout_width="206dp"
+        android:layout_height="16dp"
+        android:text="super.alamat kost"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.457" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_line_15" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.665"
+        app:srcCompat="@drawable/ic_line_15" />
+
+    <TextView
+        android:id="@+id/step2_deskripsiKost"
+        android:layout_width="374dp"
+        android:layout_height="120dp"
+        android:text="\n(akan diisi oleh user) \nDeskripsi Kost"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_light"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <TextView
+        android:id="@+id/step2_fasilitas"
+        android:layout_width="112dp"
+        android:layout_height="24dp"
+        android:text="Fasilitas"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:fontFamily="@font/poppins_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.727" />
+
+    <ImageView
+        android:id="@+id/step2_logowifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.818"
+        app:srcCompat="@drawable/ic_free_wifi_1" />
+
+    <ImageView
+        android:id="@+id/step2_logoNoparkir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.818"
+        app:srcCompat="@drawable/ic_free_parking_1" />
+
+    <ImageView
+        android:id="@+id/step2_logoShower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.626"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.818"
+        app:srcCompat="@drawable/ic_shower_1" />
+
+    <ImageView
+        android:id="@+id/step2_logoSwimmingPool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.818"
+        app:srcCompat="@drawable/ic_swimming_pool_1" />
+
+    <TextView
+        android:id="@+id/step2_textwifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Free Wifi"
+        android:fontFamily="@font/poppins_light"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step2_logowifi"
+        app:layout_constraintVertical_bias="0.107" />
+
+    <TextView
+        android:id="@+id/step2_textnoparkir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prkir Luas"
+        android:fontFamily="@font/poppins_light"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.376"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step2_logoNoparkir"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <TextView
+        android:id="@+id/step2_textshower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="K.mandi dalam"
+        android:fontFamily="@font/poppins_light"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.628"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step2_logoShower"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <TextView
+        android:id="@+id/step2_textswimmingpool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kolam Renang"
+        android:fontFamily="@font/poppins_light"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.869"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step2_logoSwimmingPool"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <ImageView
+        android:id="@+id/step2_image"
+        android:layout_width="272dp"
+        android:layout_height="282dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_bed" />
+
+    <ImageView
+        android:id="@+id/step2_arrowback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/step2_gender"
+        app:layout_constraintEnd_toStartOf="@+id/step2_image"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07"
+        app:srcCompat="@drawable/ic_arrow_back_ios_24px_1" />
+
+    <TextView
+        android:id="@+id/step2_lihatsemua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_light"
+        android:text="Lihat Semua"
+        android:textColor="#005f88"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+</androidx.constraintlayout.widget.ConstraintLayout>
