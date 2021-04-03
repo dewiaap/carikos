@@ -24,6 +24,9 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".booking_step1"></activity>
+
     </application>
 
 </manifest>
