@@ -8,24 +8,24 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
 
+import com.google.android.material.textfield.TextInputEditText;
+
 public class MainActivity extends AppCompatActivity {
-    private EditText emailInput;
-    private EditText password;
+    private TextInputEditText emailInput;
+    private TextInputEditText password;
     private Button login;
-    private Button loginToRegister;
+    private TextView loginToRegister;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
-//        username = findViewById(R.id.login_username);
-        emailInput = findViewById(R.id.login_emailInput);
+        emailInput = findViewById(R.id.login_email);
         password = findViewById(R.id.login_password);
         login = findViewById(R.id.login_button);
         loginToRegister = findViewById(R.id.login_toRegister);
 
         login.setOnClickListener(new View.OnClickListener() {
-
 
             @Override
             public void onClick(View v) {
