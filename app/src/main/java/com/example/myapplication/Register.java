@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 import com.google.android.material.textfield.TextInputEditText;
@@ -18,7 +19,7 @@ public class Register extends AppCompatActivity {
     private TextInputEditText registerTelepon;
     private TextInputEditText registerPassword;
     private Button registerSignUp;
-    private TextView registerToLogin;
+    private RadioButton radioLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +33,7 @@ public class Register extends AppCompatActivity {
         registerTelepon = findViewById(R.id.register_telepon);
         registerPassword = findViewById(R.id.register_password);
         registerSignUp = (Button) findViewById(R.id.register_button);
-        registerToLogin = findViewById(R.id.register_toLogin);
+        radioLogin = findViewById(R.id.radio_login);
 
         registerSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,7 +54,7 @@ public class Register extends AppCompatActivity {
               }
             }
         });
-        registerToLogin.setOnClickListener(new View.OnClickListener() {
+        radioLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Register.this, MainActivity.class));
