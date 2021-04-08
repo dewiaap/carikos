@@ -1,10 +1,12 @@
 package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+import com.example.myapplication.*;
 
 import android.os.Bundle;
 
 public class step2Booking extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

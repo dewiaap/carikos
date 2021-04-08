@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         loginToRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, booking_step1.class));
+                startActivity(new Intent(MainActivity.this, Register.class));
             }
         });
 
