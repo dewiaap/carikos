@@ -251,8 +251,8 @@
 
     <ImageView
         android:id="@+id/step2_image"
-        android:layout_width="272dp"
-        android:layout_height="282dp"
+        android:layout_width="230dp"
+        android:layout_height="223dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"

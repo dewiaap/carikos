@@ -9,16 +9,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".beforeBooking"></activity>
+<!--        <activity android:name=".step3Booking"></activity>-->
+<!--        <activity android:name=".beforeBooking" />-->
+<!--        <activity android:name=".step4Booking" />-->
+<!--        <activity android:name=".step2Booking" />-->
+<!--        <activity android:name=".Step1Booking" ></activity>-->
+<!--        <activity android:name=".Splashscreen">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        <activity android:name=".step3Booking"></activity>
+        <activity android:name=".beforeBooking" />
         <activity android:name=".step4Booking" />
         <activity android:name=".step2Booking" />
-        <activity android:name=".Step1Booking" />
-        <activity android:name=".Splashscreen">
+        <activity android:name=".Step1Booking" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".Splashscreen">
         </activity>
         <activity android:name=".Register" />
         <activity android:name=".MainActivity" />
@@ -28,7 +41,6 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name=".booking_step1" />
     </application>
 
 </manifest>

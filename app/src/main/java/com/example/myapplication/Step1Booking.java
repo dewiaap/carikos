@@ -11,8 +11,8 @@ import android.widget.TextView;
 public class Step1Booking extends AppCompatActivity {
 
     ImageButton PilihanKost1,PilihanKost2,PilihanKost3,PilihanKost4, buttonBackBooking;
-    TextView namaKost1,genderKost1,sisaKamarKost1, HargaKost1;
-    String[] namaKostt =  {"Kost Mantap,Kost LuarBiasa"};
+    TextView namaKost1,namaKost2,namaKost3,namaKost4, genderKost1,genderKost2,genderKost3,genderKost4,
+            sisaKamarKost1,sisaKamarKost2,sisaKamarKost3,sisaKamarKost4, HargaKost1,HargaKost2,HargaKost3,HargaKost4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,11 @@ public class Step1Booking extends AppCompatActivity {
         genderKost1 = findViewById(R.id.genderkost1);
         sisaKamarKost1 = findViewById(R.id.sisakamarkost1);
         HargaKost1 = findViewById(R.id.HargaKost1);
+
+        namaKost1.setText("Kost Pelita Indah".toString());
+        genderKost1.setText("Wanita".toString());
+        sisaKamarKost1.setText("2 kamar tersisa".toString());
+        HargaKost1.setText("Rp 1.100.000/bulan".toString());
 
         buttonBackBooking.setOnClickListener(new View.OnClickListener() {
             @Override
