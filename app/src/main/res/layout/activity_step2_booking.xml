@@ -16,7 +16,7 @@
         app:layout_constraintHorizontal_bias="0.372"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.921"
+        app:layout_constraintVertical_bias="0.865"
         app:srcCompat="@drawable/ic_line_15" />
 
     <ImageView
@@ -25,10 +25,10 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintHorizontal_bias="0.162"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.756"
+        app:layout_constraintVertical_bias="0.73"
         app:srcCompat="@drawable/ic_line_15" />
 
     <TextView
@@ -39,6 +39,7 @@
         android:text="super.namakost"
         android:textColor="@color/black"
         android:textSize="20dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.112"
@@ -52,10 +53,11 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_light"
         android:text="super.gender"
+        android:textStyle="bold"
         android:textColor="#4FA6CB"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.358" />
@@ -64,29 +66,29 @@
         android:id="@+id/step2_sisakamar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="super.sisa kamar"
         android:fontFamily="@font/poppins_light"
+        android:text="super.sisa kamar"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.358" />
 
     <TextView
         android:id="@+id/step2_alamatkost"
-        android:layout_width="206dp"
-        android:layout_height="16dp"
+        android:layout_width="201dp"
+        android:layout_height="35dp"
         android:text="super.alamat kost"
-        android:textColor="@color/black"
-        android:textSize="12dp"
+        android:textColor="#bcbcbc"
+        android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintHorizontal_bias="0.114"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.457" />
+        app:layout_constraintVertical_bias="0.469" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -113,33 +115,34 @@
 
     <TextView
         android:id="@+id/step2_deskripsiKost"
-        android:layout_width="374dp"
-        android:layout_height="120dp"
-        android:text="\n(akan diisi oleh user) \nDeskripsi Kost"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:textColor="@color/black"
+        android:layout_width="344dp"
+        android:layout_height="117dp"
         android:fontFamily="@font/poppins_light"
+        android:text="\n\n(akan diisi oleh user) \nDeskripsi Kost"
+        android:textColor="@color/black"
         android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.6" />
+        app:layout_constraintVertical_bias="0.605" />
 
     <TextView
         android:id="@+id/step2_fasilitas"
         android:layout_width="112dp"
         android:layout_height="24dp"
+        android:fontFamily="@font/poppins_light"
         android:text="Fasilitas"
         android:textColor="@color/black"
         android:textSize="18dp"
-        android:fontFamily="@font/poppins_light"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintHorizontal_bias="0.08"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.727" />
+        app:layout_constraintVertical_bias="0.704" />
 
     <ImageView
         android:id="@+id/step2_logowifi"
@@ -150,7 +153,7 @@
         app:layout_constraintHorizontal_bias="0.121"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.818"
+        app:layout_constraintVertical_bias="0.788"
         app:srcCompat="@drawable/ic_free_wifi_1" />
 
     <ImageView
@@ -159,10 +162,10 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintHorizontal_bias="0.363"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.818"
+        app:layout_constraintVertical_bias="0.788"
         app:srcCompat="@drawable/ic_free_parking_1" />
 
     <ImageView
@@ -171,10 +174,10 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.626"
+        app:layout_constraintHorizontal_bias="0.592"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.818"
+        app:layout_constraintVertical_bias="0.788"
         app:srcCompat="@drawable/ic_shower_1" />
 
     <ImageView
@@ -186,7 +189,7 @@
         app:layout_constraintHorizontal_bias="0.852"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.818"
+        app:layout_constraintVertical_bias="0.788"
         app:srcCompat="@drawable/ic_swimming_pool_1" />
 
     <TextView
@@ -234,21 +237,6 @@
         app:layout_constraintTop_toBottomOf="@+id/step2_logoShower"
         app:layout_constraintVertical_bias="0.111" />
 
-    <TextView
-        android:id="@+id/step2_textswimmingpool"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Kolam Renang"
-        android:fontFamily="@font/poppins_light"
-        android:textColor="@color/black"
-        android:textSize="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.869"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/step2_logoSwimmingPool"
-        app:layout_constraintVertical_bias="0.111" />
-
     <!--    <ImageView-->
 <!--        android:id="@+id/step2_arrowback"-->
 <!--        android:layout_width="wrap_content"-->
@@ -263,6 +251,21 @@
 <!--        app:srcCompat="@drawable/ic_arrow_back_ios_24px_1" />-->
 
     <TextView
+        android:id="@+id/step2_textswimmingpool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_light"
+        android:text="Kolam Renang"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step2_logoSwimmingPool"
+        app:layout_constraintVertical_bias="0.107" />
+
+    <TextView
         android:id="@+id/step2_lihatsemua"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -270,12 +273,72 @@
         android:text="Lihat Semua"
         android:textColor="#005f88"
         android:textSize="13dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintHorizontal_bias="0.471"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.9" />
+        app:layout_constraintVertical_bias="0.862" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="397dp"
+        android:layout_height="211dp"
+        app:layout_constraintBottom_toTopOf="@+id/step2_sisakamar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.372"
+        app:srcCompat="@drawable/punten" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="381dp"
+        android:layout_height="54dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step2_lihatsemua"
+        app:layout_constraintVertical_bias="0.466"
+        app:srcCompat="@drawable/ic_rectangle_65__1_" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="145dp"
+        android:layout_height="35dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+        app:layout_constraintEnd_toEndOf="@+id/imageView14"
+        app:layout_constraintHorizontal_bias="0.323"
+        app:layout_constraintStart_toStartOf="@+id/imageView14"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.68"
+        app:srcCompat="@drawable/ic_chat_pemilik_button" />
+
+    <ImageButton
+        android:id="@+id/step2_Bookingbutton"
+        android:layout_width="156dp"
+        android:layout_height="31dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+        app:layout_constraintEnd_toEndOf="@+id/imageView14"
+        app:layout_constraintHorizontal_bias="0.769"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.704"
+        app:srcCompat="@drawable/ic_booking_button" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="66dp"
+        android:layout_height="36dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintStart_toStartOf="@+id/imageView14"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.652"
+        app:srcCompat="@drawable/ic_wishlist_button" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
