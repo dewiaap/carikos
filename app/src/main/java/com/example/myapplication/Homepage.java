@@ -49,7 +49,7 @@ public class Homepage extends AppCompatActivity {
 
     }
     //Menampilkan halaman Fragment
-    private boolean getFragmentPage(Fragment fragment){
+    public boolean getFragmentPage(Fragment fragment){
         if (fragment != null){
             getSupportFragmentManager()
                     .beginTransaction()
@@ -59,7 +59,7 @@ public class Homepage extends AppCompatActivity {
         }
         return false;
     }
-    public void setActionBarTitle(String title) {
+    public void setActionBar(String title) {
         getSupportActionBar().setTitle(title);
     }
     @Override

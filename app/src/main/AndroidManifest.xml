@@ -11,15 +11,16 @@
         android:theme="@style/Theme.MyApplication">
         <activity android:name=".Chat"></activity>
         <activity android:name=".Splashscreen">
+        </activity>
+        <activity android:name=".Register" />
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".Homepage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Register" />
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".Homepage" />
 
         <meta-data
             android:name="preloaded_fonts"

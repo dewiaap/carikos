@@ -1,16 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/base"
     tools:context=".Notification">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <ImageView
+        android:id="@+id/wrap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="Notification" />
+        android:src="@drawable/wrap_notif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.072" />
 
-</RelativeLayout>
+    <ImageView
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_mail"
+        app:layout_constraintBottom_toBottomOf="@+id/wrap"
+        app:layout_constraintEnd_toEndOf="@+id/wrap"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/wrap"
+        app:layout_constraintVertical_bias="0.523" />
+
+    <TextView
+        android:id="@+id/judulMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informasi"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/wrap"
+        app:layout_constraintEnd_toEndOf="@+id/wrap"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toEndOf="@+id/mail"
+        app:layout_constraintTop_toTopOf="@+id/wrap"
+        app:layout_constraintVertical_bias="0.276" />
+
+    <TextView
+        android:id="@+id/isiMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Waktu sewa kos mu akan habis 3 hari lagi. "
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/wrap"
+        app:layout_constraintEnd_toEndOf="@+id/wrap"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toEndOf="@+id/mail"
+        app:layout_constraintTop_toTopOf="@+id/wrap"
+        app:layout_constraintVertical_bias="0.615" />
+
+    <TextView
+        android:id="@+id/tanggalMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="29 Agustus 2020"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/wrap"
+        app:layout_constraintEnd_toEndOf="@+id/wrap"
+        app:layout_constraintHorizontal_bias="0.859"
+        app:layout_constraintStart_toEndOf="@+id/mail"
+        app:layout_constraintTop_toTopOf="@+id/wrap"
+        app:layout_constraintVertical_bias="0.17" />
+</androidx.constraintlayout.widget.ConstraintLayout>

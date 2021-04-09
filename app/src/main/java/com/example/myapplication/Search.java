@@ -54,7 +54,7 @@ public class Search extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
         ((Homepage) getActivity())
-                .setActionBarTitle("Search");
+                .setActionBar("Search");
     }
 
     @Override

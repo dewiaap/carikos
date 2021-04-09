@@ -54,7 +54,7 @@ public class Home extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
         ((Homepage) getActivity())
-                .setActionBarTitle("Home");
+                .setActionBar("Home");
     }
 
     @Override

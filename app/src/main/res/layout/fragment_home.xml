@@ -1,16 +1,245 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/base"
     tools:context=".Home">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <ImageView
+        android:id="@+id/wrap_home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="Home" />
+        android:src="@drawable/wrap_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.069" />
 
-</RelativeLayout>
+    <ImageView
+        android:id="@+id/daerah"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="52dp"
+        android:src="@drawable/daerah"
+        app:layout_constraintBottom_toBottomOf="@+id/wrap_home"
+        app:layout_constraintEnd_toStartOf="@+id/putra"
+        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintStart_toEndOf="@+id/terdekat"
+        app:layout_constraintTop_toTopOf="@+id/wrap_home"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <ImageView
+        android:id="@+id/putra"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="76dp"
+        android:src="@drawable/putra"
+        app:layout_constraintBottom_toBottomOf="@+id/wrap_home"
+        app:layout_constraintEnd_toEndOf="@+id/putri"
+        app:layout_constraintTop_toTopOf="@+id/wrap_home"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <ImageView
+        android:id="@+id/putri"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="36dp"
+        android:src="@drawable/putri"
+        app:layout_constraintBottom_toBottomOf="@+id/wrap_home"
+        app:layout_constraintEnd_toEndOf="@+id/wrap_home"
+        app:layout_constraintTop_toTopOf="@+id/wrap_home"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <ImageView
+        android:id="@+id/terdekat"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
+        android:src="@drawable/terdekat"
+        app:layout_constraintBottom_toBottomOf="@+id/wrap_home"
+        app:layout_constraintStart_toStartOf="@+id/wrap_home"
+        app:layout_constraintTop_toTopOf="@+id/wrap_home"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:id="@+id/judulTerdekat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:text="Terdekat"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/wrap_home"
+        app:layout_constraintStart_toStartOf="@+id/wrap_home"
+        app:layout_constraintTop_toBottomOf="@+id/terdekat" />
+
+    <TextView
+        android:id="@+id/judulDaerah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="131dp"
+        android:text="Daerah"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/wrap_home"
+        app:layout_constraintStart_toStartOf="@+id/wrap_home"
+        app:layout_constraintTop_toBottomOf="@+id/daerah" />
+
+    <TextView
+        android:id="@+id/judulPutra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="224dp"
+        android:text="Putri"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/wrap_home"
+        app:layout_constraintStart_toStartOf="@+id/wrap_home"
+        app:layout_constraintTop_toBottomOf="@+id/putra" />
+    <TextView
+        android:id="@+id/judulPutri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:text="Putri"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/wrap_home"
+        app:layout_constraintStart_toStartOf="@+id/wrap_home"
+        app:layout_constraintTop_toBottomOf="@+id/terdekat" />
+
+    <TextView
+        android:id="@+id/voucherText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:text="Voucher Hari ini"
+        android:textColor="@color/secondary"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrap_home"
+        app:layout_constraintVertical_bias="0" />
+
+    <ImageView
+        android:id="@+id/voucher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:src="@drawable/voucher"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voucherText"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/favoritText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Kost Terfavorit"
+        android:textColor="@color/secondary"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voucher"
+        app:layout_constraintVertical_bias="0" />
+
+    <ImageView
+        android:id="@+id/wrapkos_home"
+        android:layout_width="370dp"
+        android:layout_height="150dp"
+        android:src="@drawable/wrapkos_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favoritText"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <ImageView
+        android:id="@+id/kospict_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/kospict_home"
+        app:layout_constraintBottom_toBottomOf="@+id/wrapkos_home"
+        app:layout_constraintStart_toStartOf="@+id/wrapkos_home"
+        app:layout_constraintTop_toTopOf="@+id/wrapkos_home"
+        app:layout_constraintVertical_bias="0.437" />
+
+    <TextView
+        android:id="@+id/namakost_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kos Pelita"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/wrapkos_home"
+        app:layout_constraintEnd_toEndOf="@+id/wrapkos_home"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toEndOf="@+id/kospict_home"
+        app:layout_constraintTop_toTopOf="@+id/wrapkos_home"
+        app:layout_constraintVertical_bias="0.257" />
+
+    <TextView
+        android:id="@+id/alamatkost_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Putra - Lowokwaru"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/wrapkos_home"
+        app:layout_constraintEnd_toEndOf="@+id/wrapkos_home"
+        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintStart_toEndOf="@+id/kospict_home"
+        app:layout_constraintTop_toTopOf="@+id/wrapkos_home"
+        app:layout_constraintVertical_bias="0.42" />
+
+    <TextView
+        android:id="@+id/sisakost_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sisa 1"
+        android:textColor="@color/red"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/wrapkos_home"
+        app:layout_constraintEnd_toEndOf="@+id/wrapkos_home"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toEndOf="@+id/kospict_home"
+        app:layout_constraintTop_toTopOf="@+id/wrapkos_home"
+        app:layout_constraintVertical_bias="0.679" />
+
+    <TextView
+        android:id="@+id/hargakost_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp. 500.000"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/wrapkos_home"
+        app:layout_constraintEnd_toEndOf="@+id/wrapkos_home"
+        app:layout_constraintHorizontal_bias="0.77"
+        app:layout_constraintStart_toEndOf="@+id/kospict_home"
+        app:layout_constraintTop_toTopOf="@+id/wrapkos_home"
+        app:layout_constraintVertical_bias="0.669" />
+</androidx.constraintlayout.widget.ConstraintLayout>

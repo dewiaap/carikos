@@ -13,13 +13,13 @@
         android:id="@+id/login_logo"
         android:layout_width="168dp"
         android:layout_height="108dp"
-        app:srcCompat="@drawable/logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.100" />
+        app:layout_constraintVertical_bias="0.134"
+        app:srcCompat="@drawable/logo" />
 
     <ImageView
         android:id="@+id/wrapper"
@@ -29,8 +29,8 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.675"
+        app:layout_constraintTop_toBottomOf="@+id/login_logo"
+        app:layout_constraintVertical_bias="0.1"
         app:srcCompat="@drawable/wrapper_long" />
     <RadioGroup
         android:id="@+id/login_register_view"
@@ -44,33 +44,34 @@
         app:layout_constraintHorizontal_bias="0.46"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.307">
+        app:layout_constraintVertical_bias="0.337">
 
 
         <RadioButton
             android:id="@+id/radio_login"
             android:layout_width="125dp"
             android:layout_height="35dp"
-            android:background="@drawable/radio_flat_selector"
+            android:background="@drawable/radio_flat_regular"
             android:button="@android:color/transparent"
             android:gravity="center"
             android:shadowColor="@color/black"
             android:text="Masuk"
-            android:textColor="@drawable/radio_flat_text_selector" />
+            android:textColor="@color/secondary" />
 
         <RadioButton
             android:id="@+id/radio_register"
             android:layout_width="125dp"
             android:layout_height="35dp"
             android:checked="true"
-            android:background="@drawable/radio_flat_selector"
+            android:background="@drawable/radio_flat_selected"
             android:button="@android:color/transparent"
             android:gravity="center"
             android:shadowColor="@color/black"
             android:text="Daftar"
-            android:textColor="@drawable/radio_flat_text_selector" />
+            android:textColor="@color/white" />
 
     </RadioGroup>
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/register_nama_layout"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -81,16 +82,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.395">
+        app:layout_constraintTop_toBottomOf="@+id/login_register_view"
+        app:layout_constraintVertical_bias="0.03">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/register_nama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
             android:hint="Nama"
-            />
+            android:inputType="textPersonName" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -103,16 +103,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.495">
+        app:layout_constraintTop_toBottomOf="@+id/register_nama_layout"
+        app:layout_constraintVertical_bias="0">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/register_telepon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="number"
             android:hint="Nomor Telepon"
-            />
+            android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -125,16 +124,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.595">
+        app:layout_constraintTop_toBottomOf="@+id/register_telepon_layout"
+        app:layout_constraintVertical_bias="0">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/register_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
             android:hint="Email"
-            />
+            android:inputType="textEmailAddress" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -147,17 +145,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.695">
+        app:layout_constraintTop_toBottomOf="@+id/register_email_layout"
+        app:layout_constraintVertical_bias="0">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/register_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword"
             android:hint="Password"
-            />
+            android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
+
     <Button
         android:id="@+id/register_button"
         android:layout_width="150dp"
@@ -169,7 +167,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.795" />
+        app:layout_constraintTop_toBottomOf="@+id/register_password_layout"
+        app:layout_constraintVertical_bias="0.1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

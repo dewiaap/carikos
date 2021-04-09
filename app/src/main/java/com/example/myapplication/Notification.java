@@ -49,7 +49,7 @@ public class Notification extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
         ((Homepage) getActivity())
-                .setActionBarTitle("Notification");
+                .setActionBar("Notification");
     }
 
     @Override

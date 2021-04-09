@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/base"
-    tools:context=".Profile">
+    tools:context=".ProfilePemilik">
 
     <RadioGroup
-        android:id="@+id/profile_penyewa_pemilik_view"
+        android:id="@+id/profilepemilik_penyewa_pemilik_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -23,28 +23,28 @@
 
 
         <RadioButton
-            android:id="@+id/profile_radio_penyewa"
-            android:layout_width="160dp"
-            android:layout_height="35dp"
-            android:background="@drawable/radio_flat_selected"
-            android:button="@android:color/transparent"
-            android:checked="true"
-            android:gravity="center"
-
-            android:shadowColor="@color/black"
-            android:text="Akun Penyewa"
-            android:textColor="@color/white" />
-
-        <RadioButton
-            android:id="@+id/profile_radio_pemilik"
+            android:id="@+id/profilepemilik_radio_penyewa"
             android:layout_width="160dp"
             android:layout_height="35dp"
             android:background="@drawable/radio_flat_regular"
             android:button="@android:color/transparent"
+            android:checked="true"
+            android:gravity="center"
+            android:shadowColor="@color/black"
+            android:text="Akun Penyewa"
+            android:textColor="@color/secondary" />
+
+        <RadioButton
+            android:id="@+id/profilepemilik_radio_pemilik"
+            android:layout_width="160dp"
+            android:layout_height="35dp"
+
+            android:background="@drawable/radio_flat_selected"
+            android:button="@android:color/transparent"
             android:gravity="center"
             android:shadowColor="@color/black"
             android:text="Akun Pemilik"
-            android:textColor="@color/secondary" />
+            android:textColor="@color/white" />
 
     </RadioGroup>
 
@@ -58,7 +58,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.143"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_penyewa_pemilik_view"
+        app:layout_constraintTop_toBottomOf="@+id/profilepemilik_penyewa_pemilik_view"
         app:layout_constraintVertical_bias="0.027" />
 
     <TextView
@@ -74,7 +74,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.61"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_penyewa_pemilik_view"
+        app:layout_constraintTop_toBottomOf="@+id/profilepemilik_penyewa_pemilik_view"
         app:layout_constraintVertical_bias="0.089" />
 
     <TextView
@@ -104,13 +104,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.241" />
-
     <TextView
         android:id="@+id/riwayatText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="43dp"
-        android:text="Riwayat"
+        android:text="List Kost"
         android:textColor="@color/black"
         android:textSize="13dp"
         android:textStyle="bold"
@@ -177,12 +176,12 @@
         android:id="@+id/status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lunas"
+        android:text="RP. 500,000"
         android:textColor="@color/black"
-        android:textSize="12dp"
+        android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="@+id/wrap_kos"
         app:layout_constraintEnd_toEndOf="@+id/wrap_kos"
-        app:layout_constraintHorizontal_bias="0.573"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toEndOf="@+id/namakost"
         app:layout_constraintTop_toTopOf="@+id/wrap_kos"
         app:layout_constraintVertical_bias="0.253" />
@@ -191,7 +190,7 @@
         android:id="@+id/tglLunas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="12 September 2020"
+        android:text="dewiaap-12 September 2020"
         android:textColor="@color/black"
         android:textSize="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/wrap_kos"
