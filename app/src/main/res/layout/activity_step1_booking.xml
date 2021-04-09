@@ -1,76 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f4f9fa">
+    android:background="#f4f9fa"
+    tools:context=".Step1Booking">
 
     <ImageButton
         android:id="@+id/pilihankost1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="361dp"
+        android:layout_height="152dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintHorizontal_bias="0.604"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.196"
+        app:layout_constraintVertical_bias="0.084"
         app:srcCompat="@drawable/ic_rectangle_82" />
 
     <ImageButton
         android:id="@+id/pilihankost2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="346dp"
+        android:layout_height="154dp"
         android:layout_marginBottom="4dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintHorizontal_bias="0.63"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pilihankost3"
-        app:layout_constraintVertical_bias="0.412"
+        app:layout_constraintVertical_bias="0.358"
         app:srcCompat="@drawable/ic_rectangle_82" />
 
     <ImageButton
         android:id="@+id/pilihankost3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="353dp"
+        android:layout_height="123dp"
         android:layout_marginBottom="108dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintHorizontal_bias="0.568"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pilihankost4"
-        app:layout_constraintVertical_bias="0.252"
+        app:layout_constraintVertical_bias="0.169"
         app:srcCompat="@drawable/ic_rectangle_82" />
 
     <ImageButton
         android:id="@+id/pilihankost4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="358dp"
+        android:layout_height="155dp"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintHorizontal_bias="0.611"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pilihankost1"
-        app:layout_constraintVertical_bias="0.042"
+        app:layout_constraintVertical_bias="0.034"
         app:srcCompat="@drawable/ic_rectangle_82" />
 
     <TextView
         android:id="@+id/namakost1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_light"
         android:text="Nama  Kost"
         android:textColor="@color/black"
-        android:fontFamily="@font/poppins_light"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/pilihankost1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.356"
+        app:layout_constraintHorizontal_bias="0.714"
         app:layout_constraintStart_toStartOf="@+id/pilihankost1"
         app:layout_constraintTop_toTopOf="@+id/pilihankost1"
-        app:layout_constraintVertical_bias="0.152" />
+        app:layout_constraintVertical_bias="0.169" />
 
     <TextView
         android:id="@+id/genderkost1"
@@ -82,10 +84,10 @@
         android:textSize="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/pilihankost1"
         app:layout_constraintEnd_toEndOf="@+id/pilihankost1"
-        app:layout_constraintHorizontal_bias="0.323"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="@+id/pilihankost1"
         app:layout_constraintTop_toTopOf="@+id/pilihankost1"
-        app:layout_constraintVertical_bias="0.339" />
+        app:layout_constraintVertical_bias="0.321" />
 
     <TextView
         android:id="@+id/sisakamarkost1"
@@ -97,88 +99,54 @@
         android:textSize="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/pilihankost1"
         app:layout_constraintEnd_toEndOf="@+id/pilihankost1"
-        app:layout_constraintHorizontal_bias="0.341"
+        app:layout_constraintHorizontal_bias="0.525"
         app:layout_constraintStart_toStartOf="@+id/pilihankost1"
         app:layout_constraintTop_toTopOf="@+id/pilihankost1"
-        app:layout_constraintVertical_bias="0.77" />
+        app:layout_constraintVertical_bias="0.766" />
 
     <TextView
         android:id="@+id/HargaKost1"
-        android:layout_width="135dp"
-        android:layout_height="23dp"
+        android:layout_width="122dp"
+        android:layout_height="22dp"
         android:fontFamily="@font/poppins_light"
         android:text="Harga"
         android:textColor="@color/black"
-        android:textSize="16dp"
+        android:textSize="12dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/pilihankost1"
         app:layout_constraintEnd_toEndOf="@+id/pilihankost1"
-        app:layout_constraintHorizontal_bias="0.887"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/pilihankost1"
         app:layout_constraintTop_toTopOf="@+id/pilihankost1"
-        app:layout_constraintVertical_bias="0.808" />
-
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="84dp"
-        android:layout_height="148dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.14"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.18"
-        app:srcCompat="@drawable/ic_bed" />
-
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="84dp"
-        android:layout_height="148dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.14"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.687"
-        app:srcCompat="@drawable/ic_bed" />
-
-    <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="84dp"
-        android:layout_height="148dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.14"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.941"
-        app:srcCompat="@drawable/ic_bed" />
-
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="84dp"
-        android:layout_height="148dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.14"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.433"
-        app:srcCompat="@drawable/ic_bed" />
+        app:layout_constraintVertical_bias="0.807" />
 
     <TextView
         android:id="@+id/HargaKost2"
-        android:layout_width="146dp"
+        android:layout_width="122dp"
         android:layout_height="26dp"
         android:fontFamily="@font/poppins_light"
         android:text="Harga"
         android:textColor="@color/black"
-        android:textSize="16dp"
+        android:textSize="12dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/pilihankost4"
         app:layout_constraintEnd_toEndOf="@+id/pilihankost4"
-        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/pilihankost4"
         app:layout_constraintTop_toTopOf="@+id/pilihankost4"
-        app:layout_constraintVertical_bias="0.867" />
+        app:layout_constraintVertical_bias="0.811" />
+
+    <!--    <ImageView-->
+<!--        android:id="@+id/bokingstep1_top_boking"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/pilihankost1"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.0"-->
+<!--        app:srcCompat="@drawable/ic_top_booking" />-->
 
     <TextView
         android:id="@+id/namakost2"
@@ -187,12 +155,13 @@
         android:fontFamily="@font/poppins_light"
         android:text="Nama  Kost"
         android:textColor="@color/black"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/pilihankost4"
         app:layout_constraintEnd_toEndOf="@+id/pilihankost4"
-        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintHorizontal_bias="0.589"
         app:layout_constraintStart_toStartOf="@+id/pilihankost4"
         app:layout_constraintTop_toTopOf="@+id/pilihankost4"
-        app:layout_constraintVertical_bias="0.137" />
+        app:layout_constraintVertical_bias="0.18" />
 
     <TextView
         android:id="@+id/genderkost2"
@@ -204,10 +173,10 @@
         android:textSize="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/pilihankost4"
         app:layout_constraintEnd_toEndOf="@+id/pilihankost4"
-        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="@+id/pilihankost4"
         app:layout_constraintTop_toTopOf="@+id/pilihankost4"
-        app:layout_constraintVertical_bias="0.33" />
+        app:layout_constraintVertical_bias="0.328" />
 
     <TextView
         android:id="@+id/sisakamarkost2"
@@ -219,22 +188,10 @@
         android:textSize="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/pilihankost4"
         app:layout_constraintEnd_toEndOf="@+id/pilihankost4"
-        app:layout_constraintHorizontal_bias="0.341"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="@+id/pilihankost4"
         app:layout_constraintTop_toTopOf="@+id/pilihankost4"
-        app:layout_constraintVertical_bias="0.779" />
-
-    <ImageView
-        android:id="@+id/bokingstep1_top_boking"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/pilihankost1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/ic_top_booking" />
+        app:layout_constraintVertical_bias="0.797" />
 
     <TextView
         android:id="@+id/namakost3"
@@ -243,12 +200,13 @@
         android:fontFamily="@font/poppins_light"
         android:text="Nama  Kost"
         android:textColor="@color/black"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/pilihankost3"
         app:layout_constraintEnd_toEndOf="@+id/pilihankost3"
-        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintHorizontal_bias="0.743"
         app:layout_constraintStart_toStartOf="@+id/pilihankost3"
         app:layout_constraintTop_toTopOf="@+id/pilihankost3"
-        app:layout_constraintVertical_bias="0.186" />
+        app:layout_constraintVertical_bias="0.158" />
 
     <TextView
         android:id="@+id/genderkost3"
@@ -260,25 +218,26 @@
         android:textSize="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/pilihankost3"
         app:layout_constraintEnd_toEndOf="@+id/pilihankost3"
-        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintHorizontal_bias="0.525"
         app:layout_constraintStart_toStartOf="@+id/pilihankost3"
         app:layout_constraintTop_toTopOf="@+id/pilihankost3"
-        app:layout_constraintVertical_bias="0.376" />
+        app:layout_constraintVertical_bias="0.361" />
 
     <TextView
         android:id="@+id/HargaKost3"
-        android:layout_width="146dp"
-        android:layout_height="26dp"
+        android:layout_width="131dp"
+        android:layout_height="27dp"
         android:fontFamily="@font/poppins_light"
         android:text="Harga"
         android:textColor="@color/black"
-        android:textSize="16dp"
+        android:textSize="12dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/pilihankost3"
         app:layout_constraintEnd_toEndOf="@+id/pilihankost3"
-        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/pilihankost3"
         app:layout_constraintTop_toTopOf="@+id/pilihankost3"
-        app:layout_constraintVertical_bias="0.826" />
+        app:layout_constraintVertical_bias="0.938" />
 
     <TextView
         android:id="@+id/sisakamarkost3"
@@ -290,10 +249,10 @@
         android:textSize="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/pilihankost3"
         app:layout_constraintEnd_toEndOf="@+id/pilihankost3"
-        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="@+id/pilihankost3"
         app:layout_constraintTop_toTopOf="@+id/pilihankost3"
-        app:layout_constraintVertical_bias="0.743" />
+        app:layout_constraintVertical_bias="0.844" />
 
     <TextView
         android:id="@+id/namakost4"
@@ -302,12 +261,13 @@
         android:fontFamily="@font/poppins_light"
         android:text="Nama  Kost"
         android:textColor="@color/black"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/pilihankost2"
         app:layout_constraintEnd_toEndOf="@+id/pilihankost2"
-        app:layout_constraintHorizontal_bias="0.377"
+        app:layout_constraintHorizontal_bias="0.597"
         app:layout_constraintStart_toStartOf="@+id/pilihankost2"
         app:layout_constraintTop_toTopOf="@+id/pilihankost2"
-        app:layout_constraintVertical_bias="0.123" />
+        app:layout_constraintVertical_bias="0.159" />
 
     <TextView
         android:id="@+id/sisakamarkost4"
@@ -319,10 +279,10 @@
         android:textSize="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/pilihankost2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.336"
+        app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="@+id/pilihankost2"
         app:layout_constraintTop_toTopOf="@+id/pilihankost2"
-        app:layout_constraintVertical_bias="0.697" />
+        app:layout_constraintVertical_bias="0.791" />
 
     <TextView
         android:id="@+id/genderkost4"
@@ -334,25 +294,135 @@
         android:textSize="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/pilihankost2"
         app:layout_constraintEnd_toEndOf="@+id/pilihankost2"
-        app:layout_constraintHorizontal_bias="0.329"
+        app:layout_constraintHorizontal_bias="0.527"
         app:layout_constraintStart_toStartOf="@+id/pilihankost2"
         app:layout_constraintTop_toTopOf="@+id/pilihankost2"
-        app:layout_constraintVertical_bias="0.321" />
+        app:layout_constraintVertical_bias="0.316" />
 
     <TextView
         android:id="@+id/HargaKost4"
-        android:layout_width="146dp"
-        android:layout_height="26dp"
+        android:layout_width="125dp"
+        android:layout_height="22dp"
         android:fontFamily="@font/poppins_light"
         android:text="Harga"
         android:textColor="@color/black"
-        android:textSize="16dp"
+        android:textSize="12dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/pilihankost2"
         app:layout_constraintEnd_toEndOf="@+id/pilihankost2"
-        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/pilihankost2"
         app:layout_constraintTop_toTopOf="@+id/pilihankost2"
-        app:layout_constraintVertical_bias="0.775" />
+        app:layout_constraintVertical_bias="0.833" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="141dp"
+        android:layout_height="111dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pilihankost1"
+        app:layout_constraintEnd_toEndOf="@+id/pilihankost1"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="@+id/pilihankost1"
+        app:layout_constraintTop_toTopOf="@+id/pilihankost1"
+        app:layout_constraintVertical_bias="0.219"
+        app:srcCompat="@drawable/punten" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="141dp"
+        android:layout_height="111dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pilihankost4"
+        app:layout_constraintEnd_toEndOf="@+id/pilihankost4"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="@+id/pilihankost4"
+        app:layout_constraintTop_toTopOf="@+id/pilihankost4"
+        app:layout_constraintVertical_bias="0.363"
+        app:srcCompat="@drawable/punten" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="141dp"
+        android:layout_height="111dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pilihankost3"
+        app:layout_constraintEnd_toEndOf="@+id/pilihankost3"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="@+id/pilihankost3"
+        app:layout_constraintTop_toTopOf="@+id/pilihankost3"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/punten" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="141dp"
+        android:layout_height="111dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pilihankost2"
+        app:layout_constraintEnd_toEndOf="@+id/pilihankost2"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="@+id/pilihankost2"
+        app:layout_constraintTop_toTopOf="@+id/pilihankost2"
+        app:layout_constraintVertical_bias="0.333"
+        app:srcCompat="@drawable/punten" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="78dp"
+        android:layout_height="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pilihankost1"
+        app:layout_constraintEnd_toEndOf="@+id/pilihankost1"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="@+id/pilihankost1"
+        app:layout_constraintVertical_bias="0.464"
+        app:srcCompat="@drawable/ic_five_stars" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pilihankost4"
+        app:layout_constraintEnd_toEndOf="@+id/pilihankost4"
+        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="@+id/pilihankost4"
+        app:layout_constraintVertical_bias="0.476"
+        app:srcCompat="@drawable/ic_four_stars" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="66dp"
+        android:layout_height="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pilihankost3"
+        app:layout_constraintEnd_toEndOf="@+id/pilihankost3"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="@+id/pilihankost3"
+        app:layout_constraintVertical_bias="0.529"
+        app:srcCompat="@drawable/ic_three_half_stars" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="30dp"
+        android:layout_height="19dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pilihankost2"
+        app:layout_constraintEnd_toEndOf="@+id/pilihankost2"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toEndOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="@+id/pilihankost2"
+        app:layout_constraintVertical_bias="0.437"
+        app:srcCompat="@drawable/ic_one_half_stars" />
+
+
+    <!--<ImageButton
+        android:id="@+id/step1_booking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_top_booking" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
