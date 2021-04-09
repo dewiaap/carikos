@@ -17,10 +17,14 @@ public class step4Booking extends AppCompatActivity {
     TextView step4_genderkost;
     TextView step4_superharga;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_step4_booking);
+
+        getSupportActionBar().setTitle("Booking");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Step1Booking Step1 = new Step1Booking();
 

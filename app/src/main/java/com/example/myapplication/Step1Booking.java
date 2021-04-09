@@ -26,19 +26,19 @@ public class Step1Booking extends AppCompatActivity {
         HargaKost1 = findViewById(R.id.HargaKost1);     HargaKost1.setText("Rp 1.100.000/bulan".toString());
         PilihanKost2 = findViewById(R.id.pilihankost2);
         namaKost2 = findViewById(R.id.namakost2);   namaKost2.setText("Kost Indah".toString());
-        genderKost2 = findViewById(R.id.genderkost2);   sisaKamarKost2.setText("5 kamar tersisa".toString());
-        sisaKamarKost2 = findViewById(R.id.sisakamarkost2);     genderKost2.setText("Wanita".toString());
+        genderKost2 = findViewById(R.id.genderkost2);     genderKost2.setText("Wanita".toString());
+        sisaKamarKost2 = findViewById(R.id.sisakamarkost2);     sisaKamarKost2.setText("5 kamar tersisa".toString());
         HargaKost2 = findViewById(R.id.HargaKost2);     HargaKost2.setText("Rp 1.300.000/bulan".toString());
         PilihanKost3 = findViewById(R.id.pilihankost3);
         namaKost3 = findViewById(R.id.namakost3);   namaKost3.setText("Kost Permata Sari".toString());
-        genderKost3 = findViewById(R.id.genderkost3);   sisaKamarKost3.setText("7 kamar tersisa".toString());
-        sisaKamarKost3 = findViewById(R.id.sisakamarkost3);     HargaKost3.setText("Rp 1.100.000/bulan".toString());
-        HargaKost3 = findViewById(R.id.HargaKost3);     genderKost3.setText("Wanita".toString());
+        genderKost3 = findViewById(R.id.genderkost3);  genderKost3.setText("Wanita".toString());
+        sisaKamarKost3 = findViewById(R.id.sisakamarkost3);      sisaKamarKost3.setText("7 kamar tersisa".toString());
+        HargaKost3 = findViewById(R.id.HargaKost3);      HargaKost3.setText("Rp 1.100.000/bulan".toString());
         PilihanKost4 = findViewById(R.id.pilihankost4);
         namaKost4 = findViewById(R.id.namakost4);   namaKost4.setText("Kost Sejati".toString());
-        genderKost4 = findViewById(R.id.genderkost4);   sisaKamarKost4.setText("10 kamar tersisa".toString());
-        sisaKamarKost4 = findViewById(R.id.sisakamarkost4);     HargaKost4.setText("Rp 1.000.000/bulan".toString());
-        HargaKost4 = findViewById(R.id.HargaKost4);     genderKost1.setText("Wanita".toString());
+        genderKost4 = findViewById(R.id.genderkost4);    genderKost1.setText("Wanita".toString());
+        sisaKamarKost4 = findViewById(R.id.sisakamarkost4);    sisaKamarKost4.setText("10 kamar tersisa".toString());
+        HargaKost4 = findViewById(R.id.HargaKost4);      HargaKost4.setText("Rp 1.000.000/bulan".toString());
 
 
 

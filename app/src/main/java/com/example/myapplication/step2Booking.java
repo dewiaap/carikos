@@ -49,12 +49,5 @@ public class step2Booking extends AppCompatActivity {
             }
         });
 
-
-
-
-
-
-
-
     }
 }

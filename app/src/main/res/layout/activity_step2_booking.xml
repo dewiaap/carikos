@@ -294,14 +294,14 @@
 
     <ImageView
         android:id="@+id/imageView14"
-        android:layout_width="381dp"
-        android:layout_height="54dp"
+        android:layout_width="360dp"
+        android:layout_height="63dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/step2_lihatsemua"
-        app:layout_constraintVertical_bias="0.466"
+        app:layout_constraintVertical_bias="0.542"
         app:srcCompat="@drawable/ic_rectangle_65__1_" />
 
     <ImageButton
@@ -310,34 +310,34 @@
         android:layout_height="35dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView14"
         app:layout_constraintEnd_toEndOf="@+id/imageView14"
-        app:layout_constraintHorizontal_bias="0.323"
+        app:layout_constraintHorizontal_bias="0.288"
         app:layout_constraintStart_toStartOf="@+id/imageView14"
         app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        app:layout_constraintVertical_bias="0.68"
+        app:layout_constraintVertical_bias="0.577"
         app:srcCompat="@drawable/ic_chat_pemilik_button" />
 
     <ImageButton
         android:id="@+id/step2_Bookingbutton"
-        android:layout_width="156dp"
-        android:layout_height="31dp"
+        android:layout_width="148dp"
+        android:layout_height="34dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView14"
         app:layout_constraintEnd_toEndOf="@+id/imageView14"
-        app:layout_constraintHorizontal_bias="0.769"
+        app:layout_constraintHorizontal_bias="0.3"
         app:layout_constraintStart_toEndOf="@+id/imageButton2"
         app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        app:layout_constraintVertical_bias="0.704"
+        app:layout_constraintVertical_bias="0.603"
         app:srcCompat="@drawable/ic_booking_button" />
 
     <ImageButton
         android:id="@+id/imageButton5"
-        android:layout_width="66dp"
+        android:layout_width="64dp"
         android:layout_height="36dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView14"
         app:layout_constraintEnd_toStartOf="@+id/imageButton2"
-        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView14"
         app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        app:layout_constraintVertical_bias="0.652"
+        app:layout_constraintVertical_bias="0.574"
         app:srcCompat="@drawable/ic_wishlist_button" />
 
 
