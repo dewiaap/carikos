@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +8,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -14,45 +17,22 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class Search extends Fragment {
-
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    ImageButton PilihanKost1,PilihanKost2,PilihanKost3,PilihanKost4, buttonBackBooking;
+    TextView namaKost1,namaKost2,namaKost3,namaKost4, genderKost1,genderKost2,genderKost3,genderKost4,
+            sisaKamarKost1,sisaKamarKost2,sisaKamarKost3,sisaKamarKost4, HargaKost1,HargaKost2,HargaKost3,HargaKost4;
 
     public Search() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment Search.
-     */
-    // TODO: Rename and change types and number of parameters
     public static Search newInstance(String param1, String param2) {
         Search fragment = new Search();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
         return fragment;
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
         ((Homepage) getActivity())
                 .setActionBar("Search");
     }
@@ -60,7 +40,102 @@ public class Search extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_search, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_search, container, false);
+        PilihanKost1 = rootView.findViewById(R.id.pilihankost1);
+        namaKost1 = rootView.findViewById(R.id.namakost1);   namaKost1.setText("Kost Pelita Indah".toString());
+        genderKost1 = rootView.findViewById(R.id.genderkost1);   genderKost1.setText("Wanita".toString());
+        sisaKamarKost1 = rootView.findViewById(R.id.sisakamarkost1); sisaKamarKost1.setText("2 kamar tersisa".toString());
+        HargaKost1 = rootView.findViewById(R.id.HargaKost1);     HargaKost1.setText("Rp 1.100.000/bulan".toString());
+        PilihanKost2 = rootView.findViewById(R.id.pilihankost2);
+        namaKost2 = rootView.findViewById(R.id.namakost2);   namaKost2.setText("Kost Indah".toString());
+        genderKost2 = rootView.findViewById(R.id.genderkost2);     genderKost2.setText("Wanita".toString());
+        sisaKamarKost2 = rootView.findViewById(R.id.sisakamarkost2);     sisaKamarKost2.setText("5 kamar tersisa".toString());
+        HargaKost2 = rootView.findViewById(R.id.HargaKost2);     HargaKost2.setText("Rp 1.300.000/bulan".toString());
+        PilihanKost3 = rootView.findViewById(R.id.pilihankost3);
+        namaKost3 = rootView.findViewById(R.id.namakost3);   namaKost3.setText("Kost Permata Sari".toString());
+        genderKost3 = rootView.findViewById(R.id.genderkost3);  genderKost3.setText("Wanita".toString());
+        sisaKamarKost3 = rootView.findViewById(R.id.sisakamarkost3);      sisaKamarKost3.setText("7 kamar tersisa".toString());
+        HargaKost3 = rootView.findViewById(R.id.HargaKost3);      HargaKost3.setText("Rp 1.100.000/bulan".toString());
+        PilihanKost4 = rootView.findViewById(R.id.pilihankost4);
+        namaKost4 = rootView.findViewById(R.id.namakost4);   namaKost4.setText("Kost Sejati".toString());
+        genderKost4 = rootView.findViewById(R.id.genderkost4);    genderKost1.setText("Wanita".toString());
+        sisaKamarKost4 = rootView.findViewById(R.id.sisakamarkost4);    sisaKamarKost4.setText("10 kamar tersisa".toString());
+        HargaKost4 = rootView.findViewById(R.id.HargaKost4);      HargaKost4.setText("Rp 1.000.000/bulan".toString());
+        PilihanKost1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(((Homepage) getActivity()), step2Booking.class));
+            }
+        });
+
+        return rootView;
+    }
+    public String getName1(){
+        String oke = "Kost Pelita Indah";
+        return oke;
+    }
+    public String getgenderKost1(){
+        String oke = "Wanita";
+        return oke;
+    }
+    public String getsisaKamarKost1(){
+        String oke = "2 kamar tersisa";
+        return oke;
+    }
+    public String getHargaKost1(){
+        String oke = "Rp 1.100.000/bulan";
+        return oke;
+    }
+    // kost 2
+    public String getName2(){
+        String oke = "Kost Indah";
+        return oke;
+    }
+    public String getgenderKost2(){
+        String oke = "Wanita";
+        return oke;
+    }
+    public String getsisaKamarKost2(){
+        String oke = "5 kamar tersisa";
+        return oke;
+    }
+    public String getHargaKost2(){
+        String oke = "Rp 1.300.000/bulan";
+        return oke;
+    }
+    // kost 3
+    public String getName3(){
+        String oke = "Kost Permata Sari";
+        return oke;
+    }
+    public String getgenderKost3(){
+        String oke = "Wanita";
+        return oke;
+    }
+    public String getsisaKamarKost3(){
+        String oke = "7 kamar tersisa";
+        return oke;
+    }
+    public String getHargaKost3(){
+        String oke = "Rp 1.100.000/bulan";
+        return oke;
+    }
+
+    // kost 4
+    public String getName4(){
+        String oke = "Kost Sejati";
+        return oke;
+    }
+    public String getgenderKost4(){
+        String oke = "Wanita";
+        return oke;
+    }
+    public String getsisaKamarKost4(){
+        String oke = "10 kamar tersisa";
+        return oke;
+    }
+    public String getHargaKost4(){
+        String oke = "Rp 1.000.000/bulan";
+        return oke;
     }
 }
