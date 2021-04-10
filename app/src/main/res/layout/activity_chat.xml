@@ -4,6 +4,127 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/base"
     tools:context=".Chat">
+
+    <RadioGroup
+        android:id="@+id/login_register_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07">
+
+
+        <RadioButton
+            android:id="@+id/radio_direct"
+            android:layout_width="125dp"
+            android:layout_height="35dp"
+            android:background="@drawable/radio_flat_selector"
+            android:button="@android:color/transparent"
+            android:checked="true"
+            android:gravity="center"
+            android:shadowColor="@color/black"
+            android:text="Direct"
+            android:textColor="@drawable/radio_flat_text_selector" />
+
+        <RadioButton
+            android:id="@+id/radio_group"
+            android:layout_width="125dp"
+            android:layout_height="35dp"
+
+            android:background="@drawable/radio_flat_selector"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:shadowColor="@color/black"
+            android:text="Group"
+            android:textColor="@drawable/radio_flat_text_selector" />
+
+        <RadioButton
+            android:id="@+id/radio_service"
+            android:layout_width="125dp"
+            android:layout_height="35dp"
+
+            android:background="@drawable/radio_flat_selector"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:shadowColor="@color/black"
+            android:text="Service"
+            android:textColor="@drawable/radio_flat_text_selector" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/wrap_kos"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/wrap_kost"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_register_view"
+        app:layout_constraintVertical_bias="0" />
+
+    <ImageView
+        android:id="@+id/kostpict"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/profile_chat"
+        app:layout_constraintEnd_toEndOf="@+id/wrap_kos"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="@+id/wrap_kos"
+        app:layout_constraintTop_toTopOf="@+id/wrap_kos" />
+
+    <TextView
+        android:id="@+id/namaKost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kos Pelita"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/wrap_kos"
+        app:layout_constraintEnd_toEndOf="@+id/wrap_kos"
+        app:layout_constraintHorizontal_bias="0.284"
+        app:layout_constraintStart_toStartOf="@+id/wrap_kos"
+        app:layout_constraintTop_toTopOf="@+id/wrap_kos"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:id="@+id/isichat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maksimal 2 orang gan"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/wrap_kos"
+        app:layout_constraintEnd_toEndOf="@+id/wrap_kos"
+        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintStart_toStartOf="@+id/wrap_kos"
+        app:layout_constraintTop_toTopOf="@+id/wrap_kos"
+        app:layout_constraintVertical_bias="0.567" />
+
+    <TextView
+        android:id="@+id/waktu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:59"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/wrap_kos"
+        app:layout_constraintEnd_toEndOf="@+id/wrap_kos"
+        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintStart_toEndOf="@+id/namaKost"
+        app:layout_constraintTop_toTopOf="@+id/wrap_kos"
+        app:layout_constraintVertical_bias="0.238" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
